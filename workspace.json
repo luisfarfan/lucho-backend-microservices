@@ -1,6 +1,10 @@
 {
   "version": 2,
   "projects": {
-    "auth": "apps/auth"
+    "apigateway": "apps/apigateway",
+    "auth": "apps/auth",
+    "data-types": "libs/data-types",
+    "exceptions": "libs/exceptions",
+    "user": "apps/user"
   }
 }

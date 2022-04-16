@@ -1,0 +1,22 @@
+{
+  "root": "libs/exceptions",
+  "sourceRoot": "libs/exceptions/src",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/exceptions/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/exceptions"],
+      "options": {
+        "jestConfig": "libs/exceptions/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
